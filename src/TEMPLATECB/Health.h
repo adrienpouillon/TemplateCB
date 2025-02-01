@@ -11,6 +11,10 @@ public:
 
 	Health();
 
+	virtual void Awake();
+
+	virtual void Start();
+
 	void TakeDamage();
 
 	void SetMaxHeath(int health);

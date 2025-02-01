@@ -1,11 +1,12 @@
 #pragma once
 #include "pch.h"
+#include <SFML/Graphics.hpp>
 
 template <typename T>
 class VectorArray
 {
 protected:
-	//std::Vector<>
+	std::Vector<T> mVector;
 public:
 	template <typename T>
 	VectorArray();

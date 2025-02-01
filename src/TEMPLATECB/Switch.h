@@ -8,5 +8,13 @@ protected:
 
 public:
 
+	Switch();
+
+	virtual void Awake();
+
+	virtual void Start();
+
+	void SwitchScene();
+
 };
 

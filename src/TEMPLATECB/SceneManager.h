@@ -2,6 +2,7 @@
 #include "pch.h"
 #include "Scene.h"
 #include "VectorArray.h"
+
 class SceneManager
 {
 protected:

@@ -11,11 +11,9 @@ public:
 	template <typename T>
 	Component();
 
-	template <typename T>
-	void Awake();
+	virtual void Awake() = 0;
 
-	template <typename T>
-	void Start();
+	virtual void Start() = 0;
 
 	template <typename T>
 	T Get();

@@ -7,5 +7,13 @@ protected:
 
 public:
 
+	Behaviour();
+
+	virtual void Awake();
+
+	virtual void Start();
+
+	virtual void Update() = 0;
+
 };
 

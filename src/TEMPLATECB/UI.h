@@ -8,5 +8,13 @@ protected:
 
 public:
 
+	UI();
+
+	virtual void Awake();
+
+	virtual void Start();
+
+	virtual void draw();
+
 };
 
