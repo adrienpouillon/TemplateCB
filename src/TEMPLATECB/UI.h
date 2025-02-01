@@ -5,7 +5,7 @@
 class UI : public Renderer
 {
 protected:
-	t
+	
 public:
 
 	UI();
