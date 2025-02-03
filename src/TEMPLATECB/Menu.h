@@ -6,6 +6,8 @@ class Menu : public Scene
 protected:
 
 public:
+	Menu();
 
+	virtual void GenerateGame();
 };
 

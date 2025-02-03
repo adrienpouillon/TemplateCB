@@ -8,7 +8,7 @@ Scene::Scene()
 
 void Scene::Init()
 {
-	mIsFinich = false;
+	//mIsFinich = false;
 }
 
 //ajouter une scene
@@ -35,11 +35,11 @@ void Scene::Update(float timeFrame)
 	for (auto it = mComponent.GetBegin(); it != mComponent.GetEnd();)
 	{
 		//int is = (*it)->GetIsDestroyed();
-		if (is == ISDESTROYINGAME)
+		if (false)
 		{
 			//mScore->Increase((*it)->GetScore());
-			delete* it;
-			it = mComponent.erase(it);
+			mComponent.Delete(&it);
+			it = mComponent.Erase(&it);
 		}
 		else
 		{
@@ -54,7 +54,7 @@ void Scene::Update(float timeFrame)
 
 Component* Scene::operator[](int i)
 {
-	return mComponent.GetTab[i];
+	return (mComponent.GetTab())[i];
 }
 
 int Scene::GenerateRandomNumber(int min, int max)

@@ -23,4 +23,3 @@ public:
 	int GenerateRandomNumber(int min, int max);
 
 };
-

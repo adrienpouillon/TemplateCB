@@ -11,7 +11,7 @@ protected:
 public:
 	GameManager();
 
-	GameManager GetInstance();
+	GameManager* GetInstance();
 
 	void Init();
 
