@@ -6,13 +6,21 @@
 class Scene
 {
 protected:
-	VectorArray<Component*> mComponent;
+	VectorArray<Component> mComponent;
 public:
 	Scene();
 
-	void Update();
+	void Init();
+
+	Component* Add(Component* component);
+
+	void Update(float timeFrame);
 
 	virtual void GenerateGame() = 0;
+
+	Component* operator[](int i);
+
+	int GenerateRandomNumber(int min, int max);
 
 };
 

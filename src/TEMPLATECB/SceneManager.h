@@ -10,9 +10,11 @@ protected:
 public:
 	SceneManager();
 
-	void SwitchScene();
+	void Init();
 
-	void Update();
+	Scene* Update(float timeFrame);
+
+	void SwitchScene();
 
 };
 
